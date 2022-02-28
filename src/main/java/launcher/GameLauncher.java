@@ -1,7 +1,7 @@
-package launcher;
+package main.java.launcher;
 
 
-import smellytrivial.Game;
+import main.java.smellytrivial.Game;
 
 import java.util.Random;
 
