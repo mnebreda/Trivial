@@ -32,3 +32,7 @@ Creo el test unitario "sacar_numero_impar_y_salir_de_la_cárcel"
 
 Cambiamos el nombre del método a JugadorNoHaGanado y cambiamos el nombre de la variable noGanador a Ganador.
 
+## Problema 5
+
+Se refactoriza el cambiar de jugador en el método pasarTurno y lo reemplazamos.
+
