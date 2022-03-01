@@ -22,3 +22,13 @@ El método agregar se modifica para que dependa del método esJugable.
 
 Creamos el test unitario "si_hay_6_jugadores"
 
+## Problema 3
+
+Añado la instrucción de salir de la cárcel en el método tirarDado (cuando se saca un número impar).
+
+Creo el test unitario "sacar_numero_impar_y_salir_de_la_cárcel"
+
+## Problema 4
+
+Cambiamos el nombre del método a JugadorNoHaGanado y cambiamos el nombre de la variable noGanador a Ganador.
+
