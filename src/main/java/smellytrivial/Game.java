@@ -128,12 +128,12 @@ public class Game {
                         + " monedas doradas.");
 
                 boolean ganador = jugadorNoHaGanado();
-                jugadorActual++;
+                pasarTurno();
                 if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
                 return ganador;
             } else {
-                jugadorActual++;
+                pasarTurno();
                 if (jugadorActual == jugadores.size()) jugadorActual = 0;
                 return true;
             }
@@ -147,7 +147,7 @@ public class Game {
                     + " monedas doradas.");
 
             boolean ganador = jugadorNoHaGanado();
-            jugadorActual++;
+            pasarTurno();
             if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
             return ganador;
@@ -159,10 +159,15 @@ public class Game {
         System.out.println(jugadores.get(jugadorActual)+ " va a la casilla de castigo");
         enCasillaCastigo[jugadorActual] = true;
 
-        jugadorActual++;
+        pasarTurno();
         if (jugadorActual == jugadores.size()) jugadorActual = 0;
         return true;
     }
+
+    private void pasarTurno() {
+        jugadorActual++;
+    }
+
     private boolean jugadorNoHaGanado() {
         return !(monederos[jugadorActual] == 6);
     }
