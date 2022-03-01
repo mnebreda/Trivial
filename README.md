@@ -36,3 +36,7 @@ Cambiamos el nombre del método a JugadorNoHaGanado y cambiamos el nombre de la 
 
 Se refactoriza el cambiar de jugador en el método pasarTurno y lo reemplazamos.
 
+## Problema 6
+
+Extraemos del método fueRespuestaCorrecta la parte donde se acierta la pregunta y llamamos
+al nuevo método respuestaAcertada reutilizándolo en la segunda parte del método fueRespuestaCorrecta.
