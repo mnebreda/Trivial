@@ -31,7 +31,7 @@ public class Game {
     }
 
     public boolean esJugable() {
-        return (cuantosJugadores() >= 2);
+        return (cuantosJugadores() >= 2 && cuantosJugadores() <= 6);
     }
 
     public boolean agregar(String playerName) {
@@ -80,7 +80,6 @@ public class Game {
             System.out.println("La categoría es " + categoriaActual());
             hacerPregunta();
         }
-
     }
 
     public String nuevaPosicionJugador() {
@@ -135,9 +134,6 @@ public class Game {
                 if (jugadorActual == jugadores.size()) jugadorActual = 0;
                 return true;
             }
-
-
-
         } else {
 
             System.out.println("Respuesta correcta!!!!");
@@ -164,8 +160,6 @@ public class Game {
         if (jugadorActual == jugadores.size()) jugadorActual = 0;
         return true;
     }
-
-
     private boolean jugadorHaGanado() {
         return !(monederos[jugadorActual] == 6);
     }
