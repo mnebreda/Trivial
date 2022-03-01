@@ -127,7 +127,7 @@ public class Game {
                         + monederos[jugadorActual]
                         + " monedas doradas.");
 
-                boolean ganador = jugadorNoHaGanado();
+                boolean ganador = jugadorHaGanado();
                 jugadorActual++;
                 if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
@@ -146,7 +146,7 @@ public class Game {
                     + monederos[jugadorActual]
                     + " monedas doradas.");
 
-            boolean ganador = jugadorNoHaGanado();
+            boolean ganador = jugadorHaGanado();
             jugadorActual++;
             if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
@@ -163,7 +163,7 @@ public class Game {
         if (jugadorActual == jugadores.size()) jugadorActual = 0;
         return true;
     }
-    private boolean jugadorNoHaGanado() {
+    private boolean jugadorHaGanado() {
         return !(monederos[jugadorActual] == 6);
     }
 }
