@@ -13,3 +13,12 @@ Utilizamos el método esJugable para que el juego se ejecute.
 Si no se ejecuta, saldrá un mensaje que te informe de que no se puede
 
 Creamos el test unitario "si_hay_menos_de_2_jugadores"
+
+## Problema 2
+
+Creamos el test "si_hay_6_jugadores" y aparece un error InputOutOfBounds porque se empieza a guardar todo 
+en la posición 1 del array, en vez de en la cero, arreglamos esa parte.
+El método agregar se modifica para que dependa del método esJugable.
+
+Creamos el test unitario "si_hay_6_jugadores"
+
